@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package school.managment.system;
+package SchoolManagementSystem;
 
-/**
- *
- * @author mosa
- */
 public class Teacher {
     private int id ;
     private String name;
@@ -16,7 +8,7 @@ public class Teacher {
     {
         this.id=id;
         this.name=name;
-        this.salary=salary;      
+        this.salary=salary;
     }
 
     public int getId() {
@@ -44,10 +36,9 @@ public class Teacher {
         this.salary = salary;
     }
     /*
-    teacher receive salary 
+    teacher receive salary
     */
     public void receivesalary(int salary){
         School.updateTotalMonySpent(salary);
     }
-    
 }

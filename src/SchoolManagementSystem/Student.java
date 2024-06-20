@@ -1,13 +1,12 @@
-package school.managment.system;
-
+package SchoolManagementSystem;
 
 public class Student {
-   private int id;
-   private String name;
-   private double grade;
-   private int level;
-   private double paidfees; 
-   private double totalfees;
+    private int id;
+    private String name;
+    private double grade;
+    private int level;
+    private double paidfees;
+    private double totalfees;
 
     public Student(int id, String name, int level) {
         this.id = id;
@@ -15,16 +14,16 @@ public class Student {
         this.grade = 0;
         this.paidfees = 0;
         this.level=level;
-        if(level<4)  // 1  2  3 
+        if(level<4)  // 1  2  3
             this.totalfees=10000;
         else if(level>3 && level<7)   // 4  5  6
             this.totalfees=15000;
         else if(level >6 && level <10)             // 7 8 9
             this.totalfees=18000;
         else
-            this.totalfees=20000;          // 10  11   12   
-    } 
-    
+            this.totalfees=20000;          // 10  11   12
+    }
+
 
     public int getId() {
         return id;
@@ -49,7 +48,7 @@ public class Student {
         return level;
     }
     /*
-    Setter 
+    Setter
     */
     public void setId(int id) {
         this.id = id;
@@ -76,15 +75,11 @@ public class Student {
     /*
                 student pay fees
     */
-   public void payfees(double fees){
-       this.paidfees+=fees;
-       this.totalfees-=fees;
-       School.updateTotalMonyEarned(fees);
-       
-   }
-           
-    
-    
-    
-    
+    public void payfees(double fees){
+        this.paidfees+=fees;
+        this.totalfees-=fees;
+        School.updateTotalMonyEarned(fees);
+
+    }
+
 }
