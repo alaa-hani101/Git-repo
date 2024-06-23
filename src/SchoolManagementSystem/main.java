@@ -22,7 +22,7 @@ public class main {
 
         School sc1=new School (teachers,students);
         /*
-        student Alaa pay haif of total fees
+        student Alaa pay half of total fees
         */
         s1.payfees(s1.getTotalfees() / 2);
         /*
