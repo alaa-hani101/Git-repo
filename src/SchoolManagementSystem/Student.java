@@ -1,8 +1,7 @@
 package schoolmanagementsystem;
 
-public class Student {
-    private int id;
-    private String name;
+public class Student extends Person {
+
     private double grade;
     private int level;
     private double paidfees;
@@ -25,13 +24,7 @@ public class Student {
     }
 
 
-    public int getId() {
-        return id;
-    }
 
-    public String getName() {
-        return name;
-    }
 
     public double getGrade() {
         return grade;
@@ -50,13 +43,6 @@ public class Student {
     /*
     Setter
     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public void setGrade(double grade) {
         this.grade = grade;

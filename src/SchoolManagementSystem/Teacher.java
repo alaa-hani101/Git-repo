@@ -1,8 +1,7 @@
 package schoolmanagementsystem;
 
-public class Teacher {
-    private int id ;
-    private String name;
+public class Teacher extends Person {
+
     private int salary;
     public Teacher(int id,String name,int salary)
     {
@@ -11,26 +10,13 @@ public class Teacher {
         this.salary=salary;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public int getSalary() {
         return salary;
     }
-    // setter
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+     /*
+    Setter
+    */
 
     public void setSalary(int salary) {
         this.salary = salary;
