@@ -5,8 +5,7 @@ public class Teacher extends Person {
     private int salary;
     public Teacher(int id,String name,int salary)
     {
-        this.id=id;
-        this.name=name;
+        super(id, name);
         this.salary=salary;
     }
 

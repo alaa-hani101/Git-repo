@@ -1,8 +1,15 @@
 package schoolmanagementsystem;
 
 public class Person {
-    public int id ;
-    public String name;
+    private int id ;
+    private String name;
+
+    // constructor
+    public Person ( int id, String name)
+    {
+        this.name=name;
+        this.id=id;
+    }
     public int getId() {
         return id;
     }

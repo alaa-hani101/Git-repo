@@ -8,8 +8,7 @@ public class Student extends Person {
     private double totalfees;
 
     public Student(int id, String name, int level) {
-        this.id = id;
-        this.name = name;
+       super(id,name);
         this.grade = 0;
         this.paidfees = 0;
         this.level=level;
