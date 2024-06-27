@@ -1,4 +1,3 @@
 # School management system
-the first created repo 
-## project notes
 
+A Simple project aim to applaying some of OOP tobics
